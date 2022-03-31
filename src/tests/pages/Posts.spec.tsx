@@ -9,13 +9,13 @@ const posts = [
   { slug: 'my-new-post', title: 'My New Post', excerpt: 'Post excerpt', updatedAt: 'March, 10th' }
 ];
 
-jest.mock('../../services/prismic.ts');
+jest.mock('../../services/prismic');
 
 describe('Posts page', () => {
   it('renders correctly', () => {
     render(<Posts posts={posts} />);
   
-    expect(screen.getByText("My New Post")).toBeInTheDocument();
+    expect(screen.getByText('My New Post')).toBeInTheDocument();
   });
 
   it('loads initial data', async () => {

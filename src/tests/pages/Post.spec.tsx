@@ -15,14 +15,14 @@ const post = {
 
 jest.mock('next-auth/client');
 
-jest.mock('../../services/prismic.ts');
+jest.mock('../../services/prismic');
 
 describe('Post page', () => {
   it('renders correctly', () => {
     render(<Post post={post} />);
   
-    expect(screen.getByText("My New Post")).toBeInTheDocument();
-    expect(screen.getByText("Post content")).toBeInTheDocument();
+    expect(screen.getByText('My New Post')).toBeInTheDocument();
+    expect(screen.getByText('Post content')).toBeInTheDocument();
   });
 
   it('redirects user if no subscription is found', async () => {
@@ -49,7 +49,7 @@ describe('Post page', () => {
     const getPrismicClientMocked = mocked(getPrismicClient);
 
     getSessionMocked.mockResolvedValueOnce({
-      activeSuscription: 'fake-active-subscription',
+      activeSubscription: 'fake-active-subscription',
     } as any);
 
     getPrismicClientMocked.mockReturnValueOnce({
@@ -73,7 +73,7 @@ describe('Post page', () => {
     expect(response).toEqual(
       expect.objectContaining({
         props: {
-          posts: {
+          post: {
             slug: 'my-new-post', 
             title: 'My New Post', 
             content: '<p>Post content</p>', 
