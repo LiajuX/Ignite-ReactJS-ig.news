@@ -1,4 +1,5 @@
 <h1 align="center">
+    <img src="https://github.com/LiajuX/Ignite-ReactJS-ig.news/blob/main/public/images/logo-readme.svg" alt="ig.news" width="400px">
 </h1>
 
 <p align="center">
@@ -40,10 +41,12 @@ This project was developed during the ReactJS trail of [Ignite](https://rocketse
 
 ## 📰 The Project:
 
-The project consists of a dashboard.
+The project consists of a blog with posts about development and the newest technologies available.
 <br>
 
-![site](https://user-images.githubusercontent.com/53796370/167653453-ea373f70-bef0-4ece-8816-d87ee144e839.gif)
+[Link to website](https://ig-news-sable.vercel.app/)
+
+![site](https://user-images.githubusercontent.com/53796370/167667881-2e0938d3-ce42-4fce-8feb-1d49a728e819.gif)
 <br>
 
 ### 🛠 Technologies
@@ -52,8 +55,11 @@ Developed with React.js, Next.js and TypeScript.
 - **[React.js](https://reactjs.org/)**
 - **[Next.js](https://nextjs.org/)**
 - **[TypeScript](https://www.typescriptlang.org/)**
-- *[Chakra UI](https://chakra-ui.com/)*
-- *[React Query](https://react-query.tanstack.com/)*
+- *[Fauna](https://fauna.com/)*
+- *[Stripe](https://stripe.com/br)*
+- *[Prismic](https://prismic.io/)*
+- *[Next Auth](https://next-auth.js.org/)*
+
 <br>
 
 ## 🏁 Starting the project:
@@ -61,6 +67,8 @@ Developed with React.js, Next.js and TypeScript.
 Clone the project: `git clone https://github.com/LiajuX/NextLevelWeek-Podcastr`
 
 ❗ **NOTE:** If you don't have yarn installed, use npm instead.
+
+❗ **NOTE:** You'll have to create some accounts to get the credentials shown in the .env.example
 
 <br>
 
@@ -74,9 +82,6 @@ $ yarn
 # to start the application on port 3000
 $ yarn dev
 
-In another terminal tab:
-# to run the server
-$ yarn server
 ````
 Access `http://localhost:3000/`.
 
