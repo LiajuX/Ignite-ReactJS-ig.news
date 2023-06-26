@@ -64,7 +64,7 @@ Developed with React.js, Next.js and TypeScript.
 
 ## 🏁 Starting the project:
 
-Clone the project: `git clone https://github.com/LiajuX/NextLevelWeek-Podcastr`
+Clone the project: `git clone https://github.com/LiajuX/Ignite-ReactJS-ig.news`
 
 ❗ **NOTE:** If you don't have yarn installed, use npm instead.
 
